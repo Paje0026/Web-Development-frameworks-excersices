@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.090);
+            margin: 0px;
+
+        }
+
+        .divholder {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(0, 0, 75);
+        }
+
+        .lowdiv {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.253);
+        }
+
+        #item {
+            font-weight: 400;
+            font-size: 17px;
+            font-family: Segoe UI Symbol;
+            margin: 15px;
+            color: rgba(0, 0, 0, 0.747);
+        }
+
+        .leftdiv {
+            padding-left: 390px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .rightdiv {
+            padding-right: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #title {
+            font-family: sans-serif;
+            color: white;
+            margin: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 35px;
+        }
+
+        #title2 {
+            font-family: sans-serif;
+            color: white;
+            margin: 26px;
+            font-weight: 400;
+            font-size: 20px;
+            font-family: Segoe UI Symbol;
+        }
+
+        .topictext {
+            font-family: sans-serif;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: Segoe UI Symbol;
+            padding-left: 15px;
+        }
+
+        .topic {
+            background-color: rgb(68, 148, 164);
+            margin: 15px 400px 0px 400px;
+            display: flex;
+            align-items: center;
+        }
+
+        .topic2 {
+            background-color: rgb(68, 148, 164);
+            margin: 2px 400px 0px 400px;
+            display: flex;
+            align-items: center;
+        }
+
+        .news {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #main {
+            max-width: 765px;
+            background-color: rgb(255, 255, 255);
+            margin: 20px 0px 0px 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mostread {
+            background-color: rgb(255, 255, 255);
+            margin: 20px 0px 0px 20px;
+            display: flex;
+            flex-direction: column;
+            max-width: 335px;
+        }
+
+        .mostreadtext {
+            font-weight: 400;
+            font-size: 17px;
+            font-family: Segoe UI Symbol;
+            margin: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+        .maintext {
+            font-family: sans-serif;
+            margin: 15px;
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+        }
+
+        .maintext2 {
+            font-family: sans-serif;
+            margin: 15px;
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="application"></div>
+    <script>
+
+        const app = React.createElement('div', { className: 'itemholder' },
+            React.createElement('div', { className: 'divholder' },
+                React.createElement('div', { className: 'leftdiv' },
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'title' }, 'Helsingin Sanomat'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'title2' }, 'Uutiset'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'title2' }, 'lehdet'),
+                    ),
+                ),
+                React.createElement('div', { className: 'rightdiv' },
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'title2' }, 'Käyttäjä'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'title2' }, 'Hae'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'title2' }, 'Valikko'),
+                    ),
+                )),
+            React.createElement('div', { className: 'bar' },
+                React.createElement('div', { className: 'lowdiv' },
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Etusivu'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'HS Visio'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Luetuimmat'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Uusimmat'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Politiikka'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Kaupunki'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Kulttuuri'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Tiede'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Hyvinvointi'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Ruoka'),
+                    ),
+                    React.createElement('div', null,
+                        React.createElement('h1', { id: 'item' }, 'Nyt'),
+                    ),
+                ),
+            ),
+            React.createElement('div', { className: 'topic' },
+                React.createElement('div', null,
+                    React.createElement('h1', { className: 'topictext' }, 'ULKOMAAT: Boris Johnson: Maamme ei palaa vanhaan matalien palkkojen malliin'),
+                ),
+            ),
+            React.createElement('div', { className: 'topic2' },
+                React.createElement('div', null,
+                    React.createElement('h1', { className: 'topictext' }, 'PÄIVÄN TIMANTTI: Lattialla istuvan naisen ”nuhruinen vaatetus” ja ”välinpitämätön asento” ärsyttivät kriitikkoa – Pohjoismaiset naiset alkoivat maalata toisiaan uudella tavalla 1800-luvulla, ja se oli monelle liikaa'),
+                ),
+            ),
+            React.createElement('div', { className: 'news' },
+                React.createElement('div', { id: 'main' },
+                    React.createElement('h1', { className: 'maintext' }, 'Ennätysmäärä Kiinan sotilas­koneita on lentänyt viime päivinä Taiwanin lähettyvillä – HS kysyi tutkijalta, mihin Kiina pyrkii'),
+                React.createElement('span', { className: 'mostreadtext' }, 'Melkein 80 kiinalaista sotilaskonetta on lentänyt viikonlopun aikana Taiwanin puolustusvyöhykkeellä. ”Ensisijaisesti kyse on viestistä”, sanoo tutkija.')),
+                React.createElement('div', { className: 'mostread' },
+                    React.createElement('h1', { className: 'maintext2' }, 'Luetuimmat'),
+                    React.createElement('span', { className: 'mostreadtext' }, 'Näin mullistui vuonna 1796 rakennettu hirsilinna – Suomalainen huippuarkkitehti remontoi viisi vuotta sukutaloaan, ja lopputulos on jotain täysin poikkeuksellista')
+                ),
+            ),
+
+        );
+        ReactDOM.render(app, document.getElementById('application'));
+
+    </script>
+</body>
+
+</html>
